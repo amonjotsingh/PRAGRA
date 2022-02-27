@@ -1,22 +1,22 @@
+import java.util.Locale;
+
 public class Main {
 
-    public static void printSumOfColumn(int arr[][]) {
-        float sumCol1 = 0;
-        float sumCol2 = 0;
-        float sumCol3 = 0;
-        for (int i = 0; i < 5; i++) {
-                sumCol1 += arr[i][0];
-                sumCol2 += arr[i][1];
-                sumCol3 += arr[i][2];
+    public static boolean isPalindrome(String str) {
+        char arr[] = str.toCharArray();
+        char[] reverseArr = new char[str.length()];
+        for (int i = 0; i < str.length(); i++) {
+            reverseArr[str.length() - i - 1] = arr[i];
         }
-        System.out.println("Sum of column 1 is " + sumCol1/5);
-        System.out.println("Sum of column 2 is " + sumCol2/5);
-        System.out.println("Sum of column 3 is " + sumCol3/5);
+        String reverse = String.copyValueOf(reverseArr);
+        if (reverse.equals(str)) return true;
+        return false;
     }
 
 
     public static void main(String[] args) {
-        int arr[][] = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}, {13, 14, 15}};
-        printSumOfColumn(arr);
+        String s = "heeheeh";
+        Integer i = 5;
+
     }
 }
