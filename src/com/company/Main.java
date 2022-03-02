@@ -1,12 +1,15 @@
 package com.company;
 
+import com.company.person;
+import com.company.player;
+
+import java.util.Locale;
+
 public class Main {
 
     public static void main(String[] args) {
-        String n;
-        player jot = new player();
-        player hary = new player("hary", 19, 6.2f);
-        System.out.println(hary.eligibility());
-        System.out.println(jot.eligibility());
+        person jot = new person();
+        jot.setName("AMONJOT");
+        jot.setAge(5);
     }
 }
