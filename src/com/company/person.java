@@ -1,35 +1,28 @@
 package com.company;
 
 public class person {
-    private String name;
+    private String firstname;
+    private String lastname;
     private int age;
-    private char sex;
+    private String address;
 
-     void setName(String name) {
-        this.name = name;
+    public person() {
+        System.out.println(" constructor without parameters is called ");
+        this.firstname = null;
+        this.lastname = null;
+        this.age = 0;
+        this.address = null;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void changeAddress(String address) {
+        this.address = address;
     }
 
-    public void setSex(char sex) {
-        this.sex = sex;
+    public String getFullName() {
+        return firstname + lastname;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public char getSex() {
-        return sex;
-    }
-
-    public void identity() {
-        System.out.println("This object is a person");
+    public String getAddress() {
+        return this.address;
     }
 }
