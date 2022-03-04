@@ -3,6 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("I have made changes");
         String s = "ASSIGNMENT";
         char arr[] = new char[s.length()];
         for (int i = 0; i < s.length(); i++) {
