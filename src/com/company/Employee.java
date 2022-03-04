@@ -4,6 +4,7 @@ public class Employee {
     String name;
     int employeeId;
     String dept;
+    String change;
     String hireDate;
     long hourlyRate;
 
