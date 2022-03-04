@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("this is trying to commit to master to use as merge");
+        System.out.println("hey");
         System.out.println("I own this ");
         String s = "ASSIGNMENT";
         char arr[] = new char[s.length()];
